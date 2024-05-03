@@ -3,6 +3,8 @@ import { WebSocketServer } from "ws";
 // Crear un nuevo servidor de websockets en el puerto 3000
 const wss = new WebSocketServer({ port: 8000 });
 
+console.log("Servidor iniciado en el puerto 8000");
+
 // Evento que se dispara cuando un cliente se conecta al servidor
 wss.on("connection", (ws) => {
   console.log("Nuevo cliente conectado");
